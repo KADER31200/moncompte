@@ -2,69 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
   <title>Vitrine Bijoux</title>
-  <style>
-    /* Reset basique */
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: Arial, sans-serif; color:#333; background:#fafafa; }
-    a { text-decoration:none; color:inherit; }
-
-    /* Header nav */
-    header { background:#fff; padding:16px; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
-    nav { display:flex; justify-content:center; gap:32px; font-weight:700; }
-    nav a { color:#555; transition:color .2s; }
-    nav a:hover { color:#000; }
-
-    /* Section */
-    .section { max-width:1200px; margin:48px auto; padding:0 16px; text-align:center; }
-    .section h2 { font-size:28px; margin-bottom:8px; letter-spacing:1px; }
-    .section h3 { font-size:20px; color:#777; margin-bottom:24px; text-transform:uppercase; }
-
-    /* Grille produits */
-    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:24px; }
-    .card {
-      background:#fff;
-      border-radius:4px;
-      overflow:hidden;
-      box-shadow:0 2px 6px rgba(0,0,0,0.05);
-      transition:transform .2s, box-shadow .2s;
-    }
-    .card:hover {
-      transform:translateY(-4px);
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-    }
-    .card img {
-      width:100%;
-      display:block;
-      object-fit:cover;
-      height:260px;
-    }
-    .card-body { padding:16px; text-align:center; }
-    .card-body h4 { font-size:18px; margin-bottom:8px; color:#444; }
-    .card-body p.desc { font-size:14px; color:#777; margin-bottom:12px; }
-    .card-body p.price { font-size:16px; font-weight:700; color:#000; }
-
-    /* Flèches de carrousel (optionnel) */
-    .carousel {
-      position:relative; overflow:hidden;
-    }
-    .arrow {
-      position:absolute;
-      top:50%;
-      transform:translateY(-50%);
-      background:rgba(255,255,255,0.8);
-      border-radius:50%;
-      width:32px; height:32px;
-      display:flex; align-items:center; justify-content:center;
-      cursor:pointer; transition:background .2s;
-    }
-    .arrow:hover { background:rgba(255,255,255,1); }
-    .arrow.prev { left:8px; }
-    .arrow.next { right:8px; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header et navigation -->
   <header>
     <nav>
       <a href="#">BIJOUX FEMME ▾</a>
@@ -74,51 +18,52 @@
     </nav>
   </header>
 
+  <!-- Section vitrine produits -->
   <section class="section">
-    <h2>Les iconiques de l'été</h2>
+    <h2>Les iconiques de l’été</h2>
     <h3>La belle sélection</h3>
 
     <div class="carousel">
       <div class="grid">
-        <!-- Carte 1 -->
+        <!-- Carte produit 1 -->
         <div class="card">
           <img src="https://via.placeholder.com/400x400?text=Chance" alt="Chance">
           <div class="card-body">
             <h4>Chance</h4>
-            <p class="desc">Collier pierres naturelles doré à l'or 18 carats</p>
-            <p class="price">115,00 €</p>
+            <p class="desc">Collier pierres naturelles doré à l'or 18 carats</p>
+            <p class="price">115,00 €</p>
           </div>
         </div>
-        <!-- Carte 2 -->
+        <!-- Carte produit 2 -->
         <div class="card">
           <img src="https://via.placeholder.com/400x400?text=Paula" alt="Paula">
           <div class="card-body">
             <h4>Paula</h4>
             <p class="desc">Chevalière femme personnalisable en plaqué or</p>
-            <p class="price">49,00 €</p>
+            <p class="price">49,00 €</p>
           </div>
         </div>
-        <!-- Carte 3 -->
+        <!-- Carte produit 3 -->
         <div class="card">
           <img src="https://via.placeholder.com/400x400?text=Marcelle" alt="Marcelle">
           <div class="card-body">
             <h4>Marcelle</h4>
             <p class="desc">Chaîne femme plaqué or perlée</p>
-            <p class="price">75,00 €</p>
+            <p class="price">75,00 €</p>
           </div>
         </div>
-        <!-- Carte 4 -->
+        <!-- Carte produit 4 -->
         <div class="card">
           <img src="https://via.placeholder.com/400x400?text=Maribou" alt="Maribou">
           <div class="card-body">
             <h4>Maribou</h4>
-            <p class="desc">Boucles d'oreilles dorées à l'or 18k</p>
-            <p class="price">65,00 €</p>
+            <p class="desc">Boucles d'oreilles dorées à l'or 18k</p>
+            <p class="price">65,00 €</p>
           </div>
         </div>
-        <!-- Ajoute autant de cartes que nécessaire -->
+        <!-- Ajoutez d'autres cartes selon vos besoins -->
       </div>
-      <!-- Flèches de navigation -->
+      <!-- Flèches de navigation (optionnel) -->
       <div class="arrow prev">&#10094;</div>
       <div class="arrow next">&#10095;</div>
     </div>
